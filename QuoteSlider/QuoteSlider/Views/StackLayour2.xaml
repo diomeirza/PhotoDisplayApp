@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuoteSlider.Views.StackLayour2">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="10">
+                <Label x:Name="lblUsername" Text="nyc_photographer"/>
+            </StackLayout>
+            <Image x:Name="img" Source="luffy.jpg"/>
+            <StackLayout Orientation="Horizontal" Spacing="20" Padding="10">
+                <Label  Text="Like"/>
+                <Label  Text="Comment"/>
+                <Label  Text="Share"/>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <BoxView Color="#f0f0f0" HeightRequest="1" />
+                <Label  Text="700 Likes"/>
+                <Label Text="This is a shot yesterday in Sweden" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
